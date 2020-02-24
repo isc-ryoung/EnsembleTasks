@@ -11,7 +11,7 @@ Method writeToFile(
        As %Status
 {
 
-	Set message= pRequest.StringValue
+	set message= pRequest.StringValue
 	$$$LOGINFO("Msg: "_message)
 
 	set st=..Adapter.PutLine("out.txt",message)

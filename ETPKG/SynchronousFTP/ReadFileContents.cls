@@ -19,9 +19,7 @@ Method OnProcessInput(pInput As %FileCharacterStream,pOutput As %RegisteredObjec
     $$$LOGINFO("Resp: "_response.StringValue)
     $$$TRACE("Resp: "_response.StringValue)
 
-    set request.StringValue=  response.StringValue
-   
-  
+    set request.StringValue =  response.StringValue
    	set tsc=..SendRequestAsync("WriteFileOut",request)
 
     Quit tsc

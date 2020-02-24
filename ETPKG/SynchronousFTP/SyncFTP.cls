@@ -13,8 +13,6 @@ Method retrieveRemoteFile(
 
 	Set tFilename= pRequest.StringValue
 	$$$LOGINFO("File: "_tFilename)
-  
-	///.StreamGet().ReadLine()
 	Set stream = ##class(%Stream.GlobalBinary).%New()
 	Set tSC=..Adapter.GetStream(tFilename, .stream)
 	
