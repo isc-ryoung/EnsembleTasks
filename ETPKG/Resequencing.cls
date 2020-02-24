@@ -25,7 +25,7 @@ XData ProductionDefinition
     <Setting Target="Adapter" Name="FileSpec">*.txt</Setting>
     <Setting Target="Host" Name="TargetConfigNames">ResequencingBP</Setting>
   </Item>
-  <Item Name="ResequencingBP" Category="HL7" ClassName="ETPKG.Resequencing.ResequencingBPL" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
+  <Item Name="ResequencingBP" Category="HL7" ClassName="ETPKG.Resequencing.ResequencingBPL" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
   </Item>
 </Production>
 }

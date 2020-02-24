@@ -25,7 +25,6 @@ XData BPL [ XMLNamespace = "http://www.intersystems.com/bpl" ]
 <request type='Ens.Request' >
 <assign property="callrequest" value="request" action="set" />
 </request>
-<response type='Ens.Response' />
 </call>
 <assign name="Assign PID" property="context.pid" value="request.GetValueAt(&quot;PID:3(1).1&quot;)" action="set" xpos='740' ypos='600' />
 <trace name='Trace PID' value='"PID: "_context.pid' xpos='740' ypos='700' />
@@ -44,7 +43,6 @@ XData BPL [ XMLNamespace = "http://www.intersystems.com/bpl" ]
 <request type='Ens.Request' >
 <assign property="callrequest" value="context.orm" action="set" />
 </request>
-<response type='Ens.Response' />
 </call>
 <code name='DeletePIDStored' xpos='1010' ypos='1250' >
 <![CDATA[ kill ^pidoidstore(context.pid)]]>
@@ -64,7 +62,6 @@ XData BPL [ XMLNamespace = "http://www.intersystems.com/bpl" ]
 <request type='Ens.Request' >
 <assign property="callrequest" value="request" action="set" />
 </request>
-<response type='Ens.Response' />
 </call>
 <code name='DeletePIDStored' xpos='200' ypos='950' >
 <![CDATA[ kill ^pidoidstore(context.pid)]]>
